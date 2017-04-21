@@ -111,3 +111,21 @@
 
             return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
         }
+
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:15,
+            nav:true,
+            navText: ["<i class='fa fa-lg fa-long-arrow-left'></i>", "<i class='fa fa-lg fa-long-arrow-right'></i>"],
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:3
+                }
+            }
+        });
